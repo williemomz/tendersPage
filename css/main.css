@@ -1,0 +1,355 @@
+body, html {
+  overflow-x: hidden;
+  background-color: #fafafa;
+  font-family: Raleway !important;
+  font-size: 14px;
+}
+
+@media print, only screen and (max-width: 600px) {
+      .owner {
+          display: flex;
+          justify-content: center;
+      }
+      .tender-detail h2{
+        font-size: 16px;
+        color: rgb(51, 102, 204);
+        font-weight: bold;
+    }
+    .tender-detail img {
+        width: 100px;
+        height: 100%;
+    }
+    .no-padding-mobile {
+        padding: 0;
+        width: 100%;
+    }
+    #my {
+        display: none;
+        background-color: rgb(255, 153, 51);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    #my a{
+        margin: 0 20px;
+        box-shadow: 1px 1px 20px 0px rgba(59,59,59,1);
+    }
+
+    #my .subscribe form .form-group {
+        margin-bottom: -15px;
+    }
+    #my hr {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        height: 6px;
+    }
+    .tender-detail #forText {
+        margin-bottom: 10px;
+    }
+
+    .pagyMobile {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+hr {
+  width: 100%;
+  background-color: rgb(255, 153, 51);
+  margin-top: 0;
+  height: 6px;
+}
+
+.header_bg {
+  background-color: rgb(153, 204, 51);
+  opacity: 0.702;
+  width: 100%;
+  margin-top: -16px;
+}
+
+.offset-12 {
+    margin-left: 150%;
+}
+
+@media print, only screen and (min-width: 601px) {
+    .desktop {
+        margin-left: 10%;
+    }
+    .desktop .nav-item  {
+        padding-right: 2px;
+    }
+    #my hr {
+        display: none;
+    }
+    .tender-detail #forText {
+        margin-bottom: 40px;
+    }
+    .card-footer {
+     display: none;
+    }
+    .pagyDesktop {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1%;
+    }
+
+}
+
+.btn {
+  color: #FFFFFF;
+  background-color: rgb(255, 153, 51);
+}
+
+.btn i {
+  color: #FFFFFF;
+}
+
+.hg {
+  height: calc(2.25rem + 2px);
+}
+
+.floatParent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.tender-listing{
+  position: relative;
+  margin-left: -30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.tender-listing img{
+   width: 100px;
+   height: 100%;
+   float: left;
+   margin-right: 10px;
+ }
+
+.tender-listing h2{
+  font-size: 16px;
+  color: rgb(51, 102, 204);
+  font-weight: bold;
+}
+
+.tender-listing a {
+  text-decoration: none;
+}
+
+.tender-detail {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.tender-detail img {
+    width: 100px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.tender-detail h2{
+    color: rgb(51, 102, 204);
+    font-weight: bold;
+}
+
+.subscribe {
+  border-radius: 5px;
+  background-color: rgb(255, 153, 51);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.subscribe .option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.option > .op, .share-button {
+flex: 1;
+}
+.op i:hover {
+    font-size: 1.5em;
+   cursor: pointer;
+}
+.share-button i:hover {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.share-button {
+    border-left: 1px #ffffff solid;
+    border-right: 1px #ffffff solid;
+    margin-bottom: -40px;
+}
+.social-toggle {
+    text-align:center;
+    transition:all 0.25s;
+}
+.social-networks {
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0) translateY(-190px);
+    transform: scale(0) translateY(-190px);
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    /* stops flickering */
+    -webkit-backface-visibility: hidden;
+}
+
+.social-gplus {
+    background: #e34429;
+}
+
+.social-twitter {
+    background: #6cdfea;
+}
+
+.social-networks.open-menu, .no-js .social-networks {
+    -webkit-transform: scale(1) translateY(-90px);
+    transform: scale(1) translateY(-90px);
+    opacity:1;
+}
+
+
+.social-networks ul {
+    position:relative;
+    top:0;
+    left:0;
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    background: #3b5998;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.social-networks ul:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.social-networks.open-menu ul:after, .no-js .social-networks ul:after {
+    margin: 35px auto;
+    border-top: 12px solid #3b5998;
+}
+
+.social-networks li {
+    font-size: 90%;
+    width: 60px;
+    margin: 0;
+    text-align: center;
+    float: left;
+    display: block;
+    height: 40px;
+    line-height:40px;
+    position: relative;
+    z-index: 2;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    transition: all .3s ease;
+}
+
+.share-button a {
+    text-decoration:none;
+}
+
+.social-networks a {
+    display:block;
+    color:white;
+}
+
+.social-networks a:hover {
+    color:#222;
+}
+
+.subscribe label{
+  margin: 10px;
+}
+
+.subscribe i {
+    color: #ffffff;
+}
+
+.subscribe_btn {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 6, 14);
+  box-shadow: 0px 0px 4.5px 0.5px rgba(24, 24, 24, 0.5);
+}
+.mar button{
+  margin-bottom: 10px;
+}
+
+.mar button a {
+    text-decoration: none;
+}
+
+.mar .btn_go {
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(8, 6, 14);
+    box-shadow: 0px 0px 4.5px 0.5px rgba(24, 24, 24, 0.5);
+}
+
+.card-footer {
+    background-color: rgb(255, 153, 51);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: -15%;
+    margin-right: -15%;
+}
+
+#sub3_btn button {
+    margin: 10px;
+    border: rgb(8, 6, 14) 1px solid;
+}
+
+.pagination {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.pagination a {
+    font-family: "Century Gothic";
+    font-size: 14px;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a i {
+  color: rgb(255, 153, 51);
+}
+
+.pagination a.active {
+    background-color: rgb(255, 153, 51);
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4.5px 0.5px rgba(24, 24, 24, 0.5);
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 50%;
+}

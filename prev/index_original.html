@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Font awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<title>Citizen Digital - Tendersoko</title>	
+</head>
+<body>
+	<div class="container">
+		<!-- Logo -->
+		<nav class="navbar">
+		  <a class="navbar-brand" href="#">
+		    <img src="assets/citizen-digital.png" width="146" height="53" alt="">
+		  </a>
+		</nav>
+	</div>
+	<hr>
+		<div class="header_bg">
+				<div class="container">
+					<div class="col-md-12">
+						<nav class="navbar navbar-expand-lg navbar-light">
+
+							<div class="col-md-4">
+								<table>
+									<tr>
+										<form class="form-inline">
+											<td><input class="form-control " type="search" placeholder="Search by Tender Title..." aria-label="Search"></td>
+											<td><button class="btn" type="submit"><i class="fa fa-search"></i></button></td>
+
+											<td><button class="navbar-toggler offset-10 btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+												<i class="fa fa-filter"></i>
+											</button></td>
+										</form>
+									</tr>
+								</table>
+							</div>
+
+
+							<div class="col-md-8 offset-2">
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+									<form class="form-inline">
+										<ul class="navbar-nav mr-auto">
+											<li class="nav-item">
+												<select class="custom-select" id="inputGroupSelect01">
+													<option selected>Select by Tender Category...</option>
+													<option value="1">Non Governmental Organizations</option>
+													<option value="2">Institutions</option>
+													<option value="3">Parastatals</option>
+                                                    <option value="4">County Governments</option>
+                                                    <option value="5">National Governments</option>
+												</select>
+											</li>
+											<li class="nav-item">
+												<input class="form-control hg" type="date" value="2018-05-17" id="example-date-input">
+											</li>
+										</ul>
+										<button class="btn my-2 my-sm-0" type="submit">Filter</button>
+									</form>
+
+
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+		</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="col-md-8">
+					<div class="col-md-12">
+						<div class="tender-listing">
+							<div class="col-md-2">
+								<img class="img-thumbnail" src="assets/IRC.jpg"  alt="">
+							</div>
+							<div class="col-md-10 offset-2">
+								<h2><a href="#" target="_blank">SUPPLY AND DELIVERY OF STATIONERY</a></h2>
+							</div>
+							<div class="col-md-10 offset-2">
+								<b><i class="fa fa-tag"></i> Category:</b> Non Governmental Organizations
+							</div>
+							<div class="col-md-10 offset-2">
+								<b><i class="fa fa-calendar"></i> Closing Date:</b> 2018-5-28
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="col-md-12">
+						<div class="subscribe">
+							<form>
+								<div class="col-md-12 form-group">
+									<label>Subscribe to get Tender alerts for<br>new Tenders via SMS or Email</label>
+								</div>
+								<div class="col-md-12 form-group">
+									<button class="btn btn-sm" onclick="showMail()"><i class="fa fa-envelope fa-2x"></i></button>
+									or
+									<button class="btn btn-sm" onclick="showTel()"><i class="fa fa-commenting fa-2x"></i></button>
+								</div>
+								<div class="col-md-12 form-group" id="forMail">
+									<input class="form-control " type="email" placeholder="Enter your email...">
+								</div>
+								<div class="col-md-12 form-group" id="forTel" style="display: none;">
+									<input class="form-control " type="tel" placeholder="Enter your mobile no... +254">
+									<!--<input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">-->
+								</div>
+								<div class="col-md-12 mar">
+									<button type="submit" class="btn subscribe_btn">SUBSCRIBE</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="col-md-8">
+					<div class="col-md-12">
+						<div class="tender-listing">
+							<div class="col-md-2">
+								<img class="img-thumbnail" src="assets/PAPB.png"  alt="">
+							</div>
+							<div class="col-md-10">
+								<h2><a href="#" target="_blank">CONSTRUCTION OF TWIN SCIENCE LABORATORY AT KAJIWE SECONDARY SCHOOL</a></h2>
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-tag"></i> Category:</b> Institutions
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-calendar"></i> Closing Date:</b> 2018-5-28
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="col-md-12">
+						<div class="tender-listing">
+							<div class="col-md-2">
+								<img class="img-thumbnail" src="assets/KU%20LOGO.jpg"  alt="">
+							</div>
+							<div class="col-md-10">
+								<h2><a href="#" target="_blank">SUPPLY AND DELIVERY OF MEDICAL EQUIMENTS FOR COUNTY RURAL HEALTH FACILITIES</a></h2>
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-tag"></i> Category:</b> Non Governmental Organizations
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-calendar"></i> Closing Date:</b> 2018-5-28
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="col-md-12">
+						<div class="tender-listing">
+							<div class="col-md-2">
+								<img class="img-thumbnail" src="assets/IOM.jpg"  alt="">
+							</div>
+							<div class="col-md-10">
+								<h2><a href="#" target="_blank">INCLUSION INTO TECHNICAL EXPERT COMMITTEES</a></h2>
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-tag"></i> Category:</b> County Governments
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-calendar"></i> Closing Date:</b> 2018-5-28
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="col-md-12">
+						<div class="tender-listing">
+							<div class="col-md-2">
+								<img class="img-thumbnail" src="assets/CGK.png"  alt="">
+							</div>
+							<div class="col-md-10">
+								<h2><a href="#" target="_blank">PROVISION OF AUDIT SERVICES</a></h2>
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-tag"></i> Category:</b> Parastatals
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-calendar"></i> Closing Date:</b> 2018-5-28
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="col-md-12">
+						<div class="tender-listing">
+							<div class="col-md-2">
+								<img class="img-thumbnail" src="assets/citizen-digital.png"  alt="">
+							</div>
+							<div class="col-md-10">
+								<h2><a href="#" target="_blank">SUPPLY AND DELIVERY OF STATIONERY</a></h2>
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-tag"></i> Category:</b> National Governments
+							</div>
+							<div class="col-md-10">
+								<b><i class="fa fa-calendar"></i> Closing Date:</b> 2018-5-28
+							</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+
+
+
+
+    <!-- jQuery -->
+	<script type="text/javascript" src="jquery/jquery-3.3.1.slim.min.js"></script>
+	<!-- Popper js -->
+	<script type="text/javascript" src="js/popper.js"></script>
+	<!-- Bootstrap JavaScript plugins -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+        function showTel() {
+            var tel = document.getElementById("forTel");
+            var mail = document.getElementById("forMail");
+                tel.style.display = "block";
+                mail.style.display = "none";
+
+
+        }
+
+        function showMail() {
+            var tel = document.getElementById("forTel");
+            var mail = document.getElementById("forMail");
+                mail.style.display = "block";
+                tel.style.display = "none";
+
+
+        }
+	</script>
+</body>
+</html>
